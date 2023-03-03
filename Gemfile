@@ -15,6 +15,9 @@ gem 'mysql2'
 # Devise for user auth
 gem 'devise'
 
+# DotENV
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Carrierwave for file uploads
 gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
 

@@ -9,8 +9,8 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use MySQL as the database for Active Record
-gem 'mysql2'
+# Use PSQL as the database for Active Record
+gem 'pg'
 
 # Devise for user auth
 gem 'devise'

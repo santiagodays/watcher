@@ -1,0 +1,2 @@
+module SearchBarsHelper
+end

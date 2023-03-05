@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WatcherBlog</title>
+    <title>The Watcher</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag 'css/clear', 'css/common', 'css/font-awesome.min', 'css/carouFredSel', 'css/prettyPhoto', 'css/sm-clean', 'style' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="page">
     <%= yield %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+
+      <!--Load JavaScript-->
+    <%= javascript_include_tag 'js/jquery', 'js/jquery.fitvids', 'js/jquery.smartmenus.min', 'js/imagesloaded.pkgd', 'js/isotope.pkgd', 'js/jquery.carouFredSel-6.0.0-packed', 'js/jquery.mousewheel.min', 'js/jquery.touchSwipe.min', 'js/jquery.easing.1.3', 'js/jquery.prettyPhoto', 'js/jquery.ba-throttle-debounce.min', 'js/jquery.nicescroll.min', 'js/main' %>
   </body>
 </html>

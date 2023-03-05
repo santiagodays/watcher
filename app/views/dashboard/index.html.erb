@@ -1,0 +1,132 @@
+<table class="doc-loader">
+    <tbody>
+        <tr>
+            <td>
+                <img src="images/ajax-document-loader.gif" alt="Loading...">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="header-search">
+    <div class="content-1330 center-relative">
+        <form class="search-form">
+            <label>
+                <input type="search" class="search-field" placeholder="Search ..." value="" name="s" title="Search for:">
+            </label>
+        </form>
+    </div>
+</div>
+
+
+<div class="body-wrapper">
+    <div class="content-1330 header-holder center-relative">
+        <div class="header-logo left">
+
+            <h1 class="site-title">
+                <a href="index.html">
+                    <img src="images/sunDefaultLogo.png" alt="Sun-">
+                </a>
+            </h1>
+
+        </div>
+
+        <div class="header-menu right">
+            <nav id="header-main-menu" class="left">
+                <ul class="main-menu sm sm-clean">
+                  <li>
+                    <%= link_to "Home", root_path %>
+                  </li>
+                  <li>
+                    <%= link_to "Add post", new_post_path %>
+                  </li>
+                </ul>
+            </nav>
+            <div class="session-links">
+                <div>
+                    <a href="/users/sign_in" target=_blank>Log In</a>
+                </div>
+                <div>
+                    <a href="/users/sign_up" target=_blank>Sign Up</a>
+                </div>
+            </div>
+            <div class="toggle-holder relative right">
+                <div id="toggle">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="content" class="site-content">
+        <article>
+            <div class="content-1330 center-relative">
+                <div class="page-desc">
+                  The user post management section of our website allows registered users to create, edit, and delete their own posts. It also provides a platform for users to view and interact with other users' posts, with features such as commenting, liking, and sharing. The section is designed to be user-friendly, intuitive, and customizable, with options to sort and filter posts by various criteria. Overall, our user post management section aims to foster a vibrant and engaging online community for our users.
+                </div>
+                <div class="clear"></div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="blog-holder block center-relative content-1330">
+                  <%= render 'shared/user_articles' %>
+                  <div class="post-border center-relative block"></div>
+                </div>
+
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="one_half">
+                    <strong>The Story</strong>
+                    <br>
+                    With a warning label this big, you know they gotta be fun. Bring me the forms I need to fill out to have her taken away. I decline the title of iron cook and accept the lesser title of zinc
+                    saucier, which I just made up.
+                    <p>&nbsp;</p>
+                    <p>
+                        Curabitur felis mi, sodales id ligula ac, pulvinar condimentum nulla. Integer dignissim bibendum augue, id dapibus nisl maximus non. Pellentesque rhoncus vitae odio ut euismod.
+                    </p>
+                </div>
+                <div class="one_half last">
+                    <strong>Dreamers</strong>
+                    <br>
+                    You probably haven’t heard of them before they sold out scenester literally readymade. Trust fund Thundercats flexitarian, aesthetic Tumblr banjo freegan semiotics biodiesel master cleanse taxidermy blog.
+                    <p>&nbsp;</p>
+                    <div class="text-left">
+                        <a href="blog.html" target="_self" class="button">More…</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </article>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="content-1330 center-relative">
+            <ul>
+                <li class="left-footer-content">
+                    © 2018 Sun HTML Template. Crafted with <i class="fa fa-heart"></i> by <a href="http://drythemes.com">DryThemes</a>.
+                </li>
+                <li class="center-footer-content">
+                    <a href="index.html">
+                        <img src="images/sunDefaultLogoFooter.png" alt="Sun-">
+                    </a>
+                </li>
+                <li class="right-footer-contnet">
+                    <a href="#">Twitter</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="left-footer-content mobile">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- End .body-border -->
+</div>

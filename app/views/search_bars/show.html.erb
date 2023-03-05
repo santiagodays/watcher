@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @search_bar %>
+
+<div>
+  <%= link_to "Edit this search bar", edit_search_bar_path(@search_bar) %> |
+  <%= link_to "Back to search bars", search_bars_path %>
+
+  <%= button_to "Destroy this search bar", @search_bar, method: :delete %>
+</div>

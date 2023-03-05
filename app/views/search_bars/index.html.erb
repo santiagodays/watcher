@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Search bars</h1>
+
+<div id="search_bars">
+  <% @search_bars.each do |search_bar| %>
+    <%= render search_bar %>
+    <p>
+      <%= link_to "Show this search bar", search_bar %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New search bar", new_search_bar_path %>

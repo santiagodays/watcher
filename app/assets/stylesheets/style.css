@@ -1422,3 +1422,13 @@ li.left-footer-content.mobile
   .header-menu.center {
     text-align: center !important;
   }
+
+  .post-image{
+    width: 50%;
+    height: auto;
+  }
+
+  .fs-5.content-style{
+    text-align: start!important;
+    margin-bottom: 30px;
+  }

@@ -1,14 +1,11 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
+<div id="<%= dom_id post %>" class="text-center my-5">
+  <p class="fs-3">
+    <strong><%= post.title %></strong>
   </p>
-  <p>
-    <strong>Content:</strong>
+  <p class="fs-5">
     <%= post.content %>
   </p>
-  <p>
-    <strong>Category:</strong>
+  <p class="fs-4">
     <%= post.category %>
   </p>
 </div>

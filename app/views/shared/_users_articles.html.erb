@@ -1,5 +1,5 @@
 <div class="post-border center-relative block"></div>
-  <% current_user.current_user_posts.each do |post| %>
+  <% Post.all.each do |post| %>
     <article class="relative blog-item-holder center-relative">
       <div class="cat-links">
         <ul>
@@ -9,7 +9,7 @@
         </ul>
       </div>
       <div class="entry-date published"><%= post.created_at.strftime("%m/%d") %></div>
-      <div class="author vcard" stlye="margin-right:10px"><%= post.user.username %></div>
+      <div class="author vcard" style="margin-right:30px"><%= post.user.username %></div>
       <h2 class="entry-title">
         <a href="<%= post_path(post) %>"><%= post.title %></a>
       </h2>

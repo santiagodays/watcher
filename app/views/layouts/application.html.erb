@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="shortcut icon" href="images/favicon.png" />
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag 'css/clear', 'css/common', 'css/font-awesome.min', 'css/carouFredSel', 'css/prettyPhoto', 'css/sm-clean', 'style' %>
@@ -20,6 +20,7 @@
       <p class="alert"><%= alert %></p>
 
       <!--Load JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <%= javascript_include_tag 'js/jquery', 'js/jquery.fitvids', 'js/jquery.smartmenus.min', 'js/imagesloaded.pkgd', 'js/isotope.pkgd', 'js/jquery.carouFredSel-6.0.0-packed', 'js/jquery.mousewheel.min', 'js/jquery.touchSwipe.min', 'js/jquery.easing.1.3', 'js/jquery.prettyPhoto', 'js/jquery.ba-throttle-debounce.min', 'js/jquery.nicescroll.min', 'js/main' %>
   </body>
 </html>

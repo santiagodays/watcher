@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2023_03_05_231333) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2023_03_06_004641) do
+>>>>>>> 4dbb4a0 (Add uploader)
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_05_231333) do
     t.text "content"
     t.string "category"
     t.integer "user_id"
+    t.string "image_slug"
   end
 
   create_table "profiles", force: :cascade do |t|

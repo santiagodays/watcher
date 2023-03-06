@@ -1,14 +1,100 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Posts</h1>
-
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
-  <% end %>
+<div class="header-search">
+    <div class="content-1330 center-relative">
+        <form class="search-form">
+            <label>
+                <input type="search" class="search-field" placeholder="Search ..." value="" name="s" title="Search for:">
+            </label>
+        </form>
+    </div>
 </div>
 
-<%= link_to "New post", new_post_path %>
+
+<div class="body-wrapper">
+<div class="content-1330 header-holder center-relative">
+    <div class="header-logo center">
+      <h1 class="site-title"> The Watcher</h1>
+    </div>
+    <div class="header-menu center">
+        <nav id="header-main-menu">
+            <ul class="main-menu sm sm-clean">
+                <li>
+                <%= link_to "Home", root_path %>
+                </li>
+                <li>
+                <%= link_to "Add post", new_post_path %>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-actions">
+        <div class="toggle-holder left">
+            <div id="toggle">
+                <a class="search-btn">Search</a>
+            </div>
+        </div>
+        <div class="session-links right">
+            <div>
+                <a href="/users/sign_in" target=_blank>Log In</a>
+            </div>
+            <div>
+                <a href="/users/sign_up" target=_blank>Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+    <div id="content" class="site-content">
+        <article>
+            <div class="content-1330 center-relative">
+                <div class="clear"></div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="blog-holder block center-relative content-1330" style="margin-top: 50px;">
+                  <div class="container text-center" style="margin-bottom: 50px;">
+                    <p style="color: green"><%= notice %></p>
+
+                    <h1>Posts</h1>
+
+                    <div id="posts">
+                      <% @posts.each do |post| %>
+                        <h3><%= link_to post.title, post %></h3>
+                      <% end %>
+                    </div>
+
+                    <%= link_to "New post", new_post_path, class: "btn btn-primary mt-4" %>
+                  </div>
+                  <div class="post-border center-relative block"></div>
+                </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="clear"></div>
+            </div>
+        </article>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="content-1330 center-relative">
+            <ul>
+                <li class="left-footer-content">
+                    © 2018 Sun HTML Template. Crafted with <i class="fa fa-heart"></i> by <a href="http://drythemes.com">DryThemes</a>.
+                </li>
+                <li class="center-footer-content">
+                </li>
+                <li class="right-footer-contnet">
+                    <a href="https://github.com/santiagodays">Github</a>
+                    <a href="https://www.linkedin.com/in/diazsant/">LinkedIn</a>
+                </li>
+                <li class="left-footer-content mobile">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- End .body-border -->
+</div>
